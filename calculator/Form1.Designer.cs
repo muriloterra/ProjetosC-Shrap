@@ -45,6 +45,7 @@
             btnClear = new Button();
             showResult = new TextBox();
             btnDiv = new Button();
+            btnComma = new Button();
             SuspendLayout();
             // 
             // btn1
@@ -265,7 +266,7 @@
             btn0.ForeColor = SystemColors.ButtonHighlight;
             btn0.Location = new Point(23, 347);
             btn0.Name = "btn0";
-            btn0.Size = new Size(195, 52);
+            btn0.Size = new Size(128, 52);
             btn0.TabIndex = 13;
             btn0.Text = "0";
             btn0.UseVisualStyleBackColor = false;
@@ -315,12 +316,29 @@
             btnDiv.UseVisualStyleBackColor = false;
             btnDiv.Click += btnDiv_Click;
             // 
+            // btnComma
+            // 
+            btnComma.BackColor = SystemColors.WindowFrame;
+            btnComma.FlatAppearance.BorderColor = SystemColors.Desktop;
+            btnComma.FlatAppearance.BorderSize = 0;
+            btnComma.FlatStyle = FlatStyle.Flat;
+            btnComma.Font = new Font("Segoe UI", 15F, FontStyle.Regular, GraphicsUnit.Point);
+            btnComma.ForeColor = SystemColors.ButtonHighlight;
+            btnComma.Location = new Point(157, 347);
+            btnComma.Name = "btnComma";
+            btnComma.Size = new Size(61, 52);
+            btnComma.TabIndex = 17;
+            btnComma.Text = ",";
+            btnComma.UseVisualStyleBackColor = false;
+            btnComma.Click += btnComma_Click;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.ActiveCaptionText;
             ClientSize = new Size(307, 421);
+            Controls.Add(btnComma);
             Controls.Add(btnDiv);
             Controls.Add(showResult);
             Controls.Add(btnClear);
@@ -364,5 +382,6 @@
         private Button btnClear;
         private TextBox showResult;
         private Button btnDiv;
+        private Button btnComma;
     }
 }

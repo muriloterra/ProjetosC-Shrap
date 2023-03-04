@@ -138,5 +138,10 @@ namespace calculator
         {
 
         }
+
+        private void btnComma_Click(object sender, EventArgs e)
+        {
+            showResult.Text += btnComma.Text;
+        }
     }
 }
